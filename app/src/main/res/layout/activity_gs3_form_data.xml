@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/colorPrimary"
+    android:padding="28dp"
+    tools:context=".getstarted.GS3_FormDataActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/montserrat_bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_large"
+            android:text="Masukkan Datamu!"/>
+
+        <LinearLayout
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <Spinner
+                android:layout_marginLeft="@dimen/margin_medium"
+                android:layout_weight="5"
+                android:id="@+id/gs3spinnersatuan1"
+                android:layout_width="match_parent"
+                android:backgroundTint="@color/white"
+                android:layout_height="wrap_content" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_weight="2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:boxStrokeColor="@color/white"
+                app:hintTextColor="@color/colorPrimary"
+                android:textColorHint="@color/colorPrimary"
+                android:hint="Berat Badan Saat Ini">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/gs3beratsaatini"
+                    android:layout_width="match_parent"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_bg"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <Spinner
+                android:layout_marginLeft="@dimen/margin_medium"
+                android:layout_weight="5"
+                android:id="@+id/gs3spinnersatuan2"
+                android:layout_width="match_parent"
+                android:backgroundTint="@color/white"
+                android:layout_height="wrap_content" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_weight="2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:boxStrokeColor="@color/colorPrimary"
+                app:hintTextColor="@color/colorPrimary"
+                android:textColorHint="@color/colorPrimary"
+                android:hint="Berat Badan Yang Diinginkan">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/gs3beratyangdiinginkan"
+                    android:layout_width="match_parent"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_bg"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+        </LinearLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_marginTop="@dimen/margin_medium"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Tujuan Diet"
+            app:boxStrokeColor="@color/white"
+            app:hintTextColor="@color/white"
+            android:textColorHint="@color/white"
+            app:endIconMode="custom"
+            app:endIconDrawable="@drawable/baseline_arrow_drop_down_24"
+            app:endIconTint="@color/white"
+            >
+
+            <EditText
+                android:id="@+id/editTextTujuanDiet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:textColor="@color/white"
+                android:cursorVisible="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:importantForAutofill="no"
+                android:background="@drawable/rounded_bg_stroke"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_marginTop="@dimen/margin_medium"
+            android:id="@+id/datePickerTextInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:endIconMode="custom"
+            app:endIconDrawable="@drawable/baseline_date_range_24"
+            app:endIconTint="@color/white"
+            app:boxStrokeColor="@color/white"
+            app:hintTextColor="@color/white"
+            android:textColorHint="@color/white"
+            android:hint="Tanggal Target Capaian">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/gs3datePickerTextInputEditText"
+                android:layout_width="match_parent"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:background="@drawable/rounded_bg_stroke"
+                android:clickable="true" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="@dimen/margin_medium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:boxStrokeColor="@color/colorPrimary"
+                app:hintTextColor="@color/colorPrimary"
+                android:textColorHint="@color/colorPrimary"
+                android:hint="Jumlah Kalori Harian (gram)">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/gs3jumlahkalori"
+                    android:layout_width="match_parent"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_bg"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_marginTop="@dimen/margin_medium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:boxStrokeColor="@color/colorPrimary"
+                app:hintTextColor="@color/colorPrimary"
+                android:textColorHint="@color/colorPrimary"
+                android:hint="Tinggi Badan (cm)">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/gs3TinggiBadan"
+                    android:layout_width="match_parent"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_bg"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+        </RelativeLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_marginTop="60dp"
+            android:id="@+id/gs3btsend"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_white"
+            android:textAllCaps="false"
+            android:textColor="@color/colorPrimary"
+            android:text="Submit"/>
+    </LinearLayout>
+</ScrollView>

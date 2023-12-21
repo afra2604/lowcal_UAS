@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".auth.AuthActivity">
+
+    <LinearLayout
+        android:layout_margin="28dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Daftarkan Akun"
+            android:textSize="24dp"
+            android:fontFamily="@font/montserrat_bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Masukkan email dan password untuk mendaftar"
+            android:textSize="16dp"
+            android:fontFamily="@font/montserrat_bold" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_marginTop="@dimen/margin_large"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Masukkan email kamu">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/signup_et_email"
+                android:layout_width="match_parent"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_edittext"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_marginTop="@dimen/margin_medium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Masukkan password baru kamu">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/signup_et_password"
+                android:layout_width="match_parent"
+                android:textColor="@color/black"
+                android:inputType="textPassword"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_edittext"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone"/>
+
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_marginTop="@dimen/margin_medium"
+            android:id="@+id/signup_bt_signup"
+            android:layout_width="fill_parent"
+            android:layout_height="42dp"
+            android:background="@drawable/rounded_button_secondary"
+            android:text="Registrasi"
+            android:fontFamily="@font/montserrat"
+            android:textAllCaps="false"
+            android:textColor="#FFF"
+            android:textSize="@dimen/text_size_large" />
+
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "889024133841",
+    "project_id": "lowcal-ebf36",
+    "storage_bucket": "lowcal-ebf36.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:889024133841:android:fb1ae9a9b81d16713e63f0",
+        "android_client_info": {
+          "package_name": "com.example.lowcal"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA7kJiRcx96Es2CXK_V1-HYVPHStjokF1A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

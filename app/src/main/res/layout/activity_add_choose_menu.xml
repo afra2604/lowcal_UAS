@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="28dp"
+    android:background="@color/colorPrimary"
+    tools:context=".usermenu.choosemenu.AddChooseMenuActivity">
+
+    <TextView
+        android:layout_marginTop="@dimen/margin_large"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tambahkan Makanan"
+        android:textColor="@color/white"
+        android:fontFamily="@font/montserrat_bold"
+        android:textSize="28dp" />
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="Tambahkan daftar makanan yang telah kamu konsumsi" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_marginTop="@dimen/margin_large"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:boxStrokeColor="@color/white"
+        app:hintTextColor="@color/white"
+        android:textColorHint="@color/colorPrimary"
+        android:hint="Isi Nama Makanan">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/add_choosemenu_name"
+            android:layout_width="match_parent"
+            android:textColor="@color/white"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_edittext"
+
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_marginTop="@dimen/margin_medium"
+        android:id="@+id/datePickerTextInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:endIconMode="custom"
+        app:endIconDrawable="@drawable/baseline_date_range_24"
+        app:boxStrokeColor="@color/white"
+        app:hintTextColor="@color/white"
+        android:textColorHint="@color/colorPrimary"
+        android:hint="Waktu makan">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/add_choosemenu_time"
+            android:layout_width="match_parent"
+            android:textColor="@color/white"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:background="@drawable/rounded_edittext"
+            android:clickable="true" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_marginTop="@dimen/margin_medium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:boxStrokeColor="@color/white"
+        app:hintTextColor="@color/white"
+        android:textColorHint="@color/colorPrimary"
+        android:hint="Jumlah kalori">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/add_choosemenu_et_kalori"
+            android:layout_width="match_parent"
+            android:textColor="@color/white"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_edittext"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_marginTop="@dimen/margin_medium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:boxStrokeColor="@color/white"
+        app:hintTextColor="@color/white"
+        android:textColorHint="@color/colorPrimary"
+        android:hint="jumlah sajian">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/add_choosemenu_et_serving"
+            android:layout_width="match_parent"
+            android:textColor="@color/white"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_edittext"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Spinner
+        android:layout_marginTop="@dimen/margin_large"
+        android:id="@+id/add_choosemenu_spinner_makan"
+        android:layout_width="match_parent"
+        android:background="@drawable/rounded_edittext"
+        android:layout_height="wrap_content" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_marginTop="60dp"
+        android:id="@+id/add_choosemenu_bt_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_white"
+        android:textAllCaps="false"
+        android:textColor="@color/colorPrimary"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="Tambahkan Makanan"/>
+
+
+
+</LinearLayout>
